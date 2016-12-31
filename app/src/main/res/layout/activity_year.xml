@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_year"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.pramesh.bvctimetableadmin.Year">
+
+    <Button
+        android:text="First Year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shapebutton"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="107dp"
+        android:id="@+id/firstYear" />
+
+    <Button
+        android:text="Second Year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/shapebutton"
+        android:textColor="@color/white"
+        android:id="@+id/secondYear"
+        android:layout_below="@+id/firstYear"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Third Year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/thirdYear"
+        android:background="@drawable/shapebutton"
+        android:textColor="@color/white"
+        android:layout_below="@+id/secondYear"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Fourth Year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thirdYear"
+        android:background="@drawable/shapebutton"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/fourthYear" />
+
+</RelativeLayout>

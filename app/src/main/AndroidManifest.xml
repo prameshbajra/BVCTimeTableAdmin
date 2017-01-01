@@ -21,16 +21,32 @@
         </activity>
 
         <activity android:name=".Year"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Department" />
+        </activity>
 
         <activity android:name=".Semester"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Year" />
+        </activity>
 
         <activity android:name=".Section"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Semester" />
+        </activity>
 
         <activity android:name=".TimeTablePage"
-            android:screenOrientation="landscape"></activity>
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Section" />
+        </activity>
     </application>
 
 </manifest>

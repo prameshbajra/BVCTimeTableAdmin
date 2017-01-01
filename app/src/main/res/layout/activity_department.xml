@@ -61,4 +61,15 @@
         android:layout_marginBottom="45dp"
         android:layout_above="@+id/cseButton"
         android:layout_toStartOf="@+id/cseButton" />
+
+    <TextView
+        android:text="Please Select The Department"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:id="@+id/textView" />
 </RelativeLayout>

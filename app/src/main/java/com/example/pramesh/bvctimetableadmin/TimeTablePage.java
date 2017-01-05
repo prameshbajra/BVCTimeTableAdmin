@@ -39,67 +39,67 @@ public class TimeTablePage extends AppCompatActivity {
         switch (value) {
             case "civilfirstfirstA":
                 firebaseData = FirebaseDatabase.getInstance().getReference().child("civiltableoneoneA");
-                firebaseData.keepSynced(true);
+
                 break;
             case "civilfirstfirstB":
                 firebaseData = FirebaseDatabase.getInstance().getReference().child("");
-                firebaseData.keepSynced(true);
+
                 break;
             case "civilfirstfirstC":
                 firebaseData = FirebaseDatabase.getInstance().getReference().child("");
-                firebaseData.keepSynced(true);
+
                 break;
             case "civilfirstsecondA":
                 firebaseData = FirebaseDatabase.getInstance().getReference().child("");
-                firebaseData.keepSynced(true);
+
                 break;
             case "civilfirstsecondB":
                 firebaseData = FirebaseDatabase.getInstance().getReference().child("");
-                firebaseData.keepSynced(true);
+
                 break;
             case "civilfirstsecondC":
                 firebaseData = FirebaseDatabase.getInstance().getReference().child("");
-                firebaseData.keepSynced(true);
+
                 break;
             case "civilsecondfirstA":
                 firebaseData = FirebaseDatabase.getInstance().getReference().child("");
-                firebaseData.keepSynced(true);
+
                 break;
             case "civilsecondfirstB":
                 firebaseData = FirebaseDatabase.getInstance().getReference().child("");
-                firebaseData.keepSynced(true);
+
                 break;
             case "civilsecondfirstC":
                 firebaseData = FirebaseDatabase.getInstance().getReference().child("");
-                firebaseData.keepSynced(true);
+
                 break;
             case "civilsecondsecondA":
                 firebaseData = FirebaseDatabase.getInstance().getReference().child("");
-                firebaseData.keepSynced(true);
+
                 break;
             case "civilsecondsecondB":
                 firebaseData = FirebaseDatabase.getInstance().getReference().child("");
-                firebaseData.keepSynced(true);
+
                 break;
             case "civilsecondsecondC":
                 firebaseData = FirebaseDatabase.getInstance().getReference().child("");
-                firebaseData.keepSynced(true);
+
                 break;
             case "civilthirdfirstA":
                 firebaseData = FirebaseDatabase.getInstance().getReference().child("");
-                firebaseData.keepSynced(true);
+
                 break;
             case "civilthirdfirstB":
                 firebaseData = FirebaseDatabase.getInstance().getReference().child("");
-                firebaseData.keepSynced(true);
+
                 break;
             case "civilthirdfirstC":
                 firebaseData = FirebaseDatabase.getInstance().getReference().child("");
-                firebaseData.keepSynced(true);
+
                 break;
             case "civilthirdsecondA":
                 firebaseData = FirebaseDatabase.getInstance().getReference().child("");
-                firebaseData.keepSynced(true);
+
                 break;
             case "civilthirdsecondB":
                 firebaseData = FirebaseDatabase.getInstance().getReference().child("");
@@ -175,11 +175,11 @@ public class TimeTablePage extends AppCompatActivity {
                 break;
             case "csethirdsecondA":
                 firebaseData = FirebaseDatabase.getInstance().getReference().child("csetablethreetwoA");
-                firebaseData.keepSynced(true);
+
                 break;
             case "csethirdsecondB":
                 firebaseData = FirebaseDatabase.getInstance().getReference().child("");
-                firebaseData.keepSynced(true);
+
                 break;
             case "csethirdsecondC":
                 firebaseData = FirebaseDatabase.getInstance().getReference().child("");
@@ -430,6 +430,8 @@ public class TimeTablePage extends AppCompatActivity {
 
 
         }
+
+        firebaseData.keepSynced(true);
 
         // Firebase stuff begins ...
 

@@ -9,7 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class Section extends AppCompatActivity {
+import com.liuguangqiang.swipeback.SwipeBackActivity;
+import com.liuguangqiang.swipeback.SwipeBackLayout;
+
+public class Section extends SwipeBackActivity {
 
     private Button sectionA, sectionB, sectionC;
 
@@ -17,6 +20,7 @@ public class Section extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_section);
+        setDragEdge(SwipeBackLayout.DragEdge.LEFT);
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

@@ -15,10 +15,12 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.liuguangqiang.swipeback.SwipeBackActivity;
+import com.liuguangqiang.swipeback.SwipeBackLayout;
 
 import java.util.Map;
 
-public class TimeTablePage extends AppCompatActivity {
+public class TimeTablePage extends SwipeBackActivity {
 
     private TextView mondayFirst, mondaySecond, mondayThird, mondayForth, mondayFifth, mondaySixth, mondaySeventh;
     private TextView tuesdayFirst, tuesdaySecond, tuesdayThird, tuesdayFourth, tuesdayFifth, tuesdaySixth, tuesdaySeventh;
@@ -33,6 +35,7 @@ public class TimeTablePage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_time_table_page);
+        setDragEdge(SwipeBackLayout.DragEdge.LEFT);
 
         final String value = getIntent().getStringExtra("value");
 

@@ -9,7 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class Year extends AppCompatActivity {
+import com.liuguangqiang.swipeback.SwipeBackActivity;
+import com.liuguangqiang.swipeback.SwipeBackLayout;
+
+public class Year extends SwipeBackActivity {
 
     private Button firstYear, secondYear, thirdYear, fourthYear;
 
@@ -17,6 +20,8 @@ public class Year extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_year);
+        setDragEdge(SwipeBackLayout.DragEdge.LEFT);
+
 
         firstYear = (Button) findViewById(R.id.firstYear);
         secondYear = (Button) findViewById(R.id.secondYear);

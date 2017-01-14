@@ -9,7 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class Semester extends AppCompatActivity {
+import com.liuguangqiang.swipeback.SwipeBackActivity;
+import com.liuguangqiang.swipeback.SwipeBackLayout;
+
+public class Semester extends SwipeBackActivity {
 
     private Button firstSemester,secondSemester;
 
@@ -17,6 +20,8 @@ public class Semester extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_semester);
+        setDragEdge(SwipeBackLayout.DragEdge.LEFT);
+
 
         firstSemester = (Button) findViewById(R.id.firstSemester);
         secondSemester = (Button) findViewById(R.id.secondSemester);
